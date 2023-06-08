@@ -1,0 +1,17 @@
+@import 'styles/abstract/variables.scss';
+
+#testimonials {
+    @include flex-column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    h2 {
+        @include red-box;
+        width: 50%;
+    }
+    .testimonials-container {
+        border: 4px solid gray;
+        padding: 1rem;
+        width: 100%;
+    }
+}

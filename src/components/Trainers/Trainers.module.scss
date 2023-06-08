@@ -1,6 +1,7 @@
 @import 'styles/abstract/variables.scss';
 
 #trainers {
+    margin: 1rem 1rem 4rem;
     .text-container {
         @include flex-column;
         align-items: center;

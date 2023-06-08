@@ -19,7 +19,7 @@
                 color: $logo-color;
                 transition: all .3s;
                 &:hover {
-                    color: #146C94;
+                    color: $secondary-color;
                 }
             }
         }

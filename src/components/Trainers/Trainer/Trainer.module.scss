@@ -30,7 +30,7 @@
         padding-top: 1rem;
         justify-content: space-evenly;
         width: 90%;
-        height: 12rem;
+        height: 15rem;
         position: absolute;
         background-color: #FFFFFF;
         bottom: 0;
@@ -50,9 +50,17 @@
         h4 {
             @include size-font(1.1rem, $secondary-font);
         }
+
+        .bar {
+            background-color: $primary-color;
+            width: 20%;
+            padding: 3px;
+            position: absolute;
+            bottom: 0;
+        }
         .social {
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
             svg {
                 color: rgb(179, 179, 179);
                 width: 1.4rem;
@@ -60,8 +68,7 @@
                 &:hover {
                     color: $primary-color;
                 }
-            }            
-
+            }               
         }
     }
 }

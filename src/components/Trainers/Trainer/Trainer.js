@@ -21,6 +21,7 @@ const Trainer = (props) => {
                     <FaTwitter />
                     <FaInstagram />
                 </div>
+                <div className={styles.bar}></div>
             </div>   
         </div>
     );

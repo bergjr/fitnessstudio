@@ -1,0 +1,7 @@
+@import 'styles/abstract/variables.scss';
+
+#testimonials {
+    h2 {
+        @include red-box;
+    }
+}

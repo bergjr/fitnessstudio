@@ -4,6 +4,7 @@ import ExerciseList from 'components/ExerciseList/ExerciseList';
 import React from 'react';
 import styles from './MainPage.module.scss';
 import Trainers from 'components/Trainers/Trainers';
+import Testimonials from 'components/Testimonials/Testimonials';
 
 const MainPage = () => {
     return (
@@ -14,6 +15,7 @@ const MainPage = () => {
             </section>
             <Classes />
             <Trainers />
+            <Testimonials />
         </>
     );
 }

@@ -1,0 +1,36 @@
+@import 'styles/abstract/variables.scss';
+
+.class {
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+    overflow: hidden;
+    .img {
+        position: absolute;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%);
+        transition: all .9s;
+        &:hover {
+            transform: scale(1.2);
+            filter: grayscale(0);
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        color: #FFFFFF;
+        h3 {
+            @include size-font(4rem, $main-font); 
+        }
+        h4 {
+           background-color: $primary-color;
+           padding: .8rem;
+           @include size-font(1rem, $secondary-font); 
+
+        }
+    }
+}

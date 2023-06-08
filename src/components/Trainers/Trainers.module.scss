@@ -1,0 +1,30 @@
+@import 'styles/abstract/variables.scss';
+
+#trainers {
+    .text-container {
+        @include flex-column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        h3 {
+            @include red-box;
+            @include size-font(1.5rem, $main-font);
+            width: 50%;
+        }
+        h2 {
+            @include size-font (2.5rem, $secondary-font);
+            font-weight: bold;
+        }
+        p {
+            @include size-font (1rem, $secondary-font);
+            font-weight: 500;
+            color: #292727;
+            margin-bottom: 1rem;
+        }
+    }
+    ul {
+        @include flex-column;
+        gap: 2rem;
+    }
+}

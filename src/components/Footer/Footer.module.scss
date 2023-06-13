@@ -1,0 +1,40 @@
+@import "styles/abstract/variables.scss";
+
+#footer {
+    background-color: $primary-color;
+    color: #FFFFFF;
+    .container {
+        @include flex-column;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem;
+        p {
+            text-align: center;
+            padding: 0 5%;
+            @include size-font(1rem, $secondary-font);
+        }
+        .bold {
+            font-weight: bold;
+        }
+        h2 {
+           @include size-font(2rem, $main-font);
+           border-bottom: 2px solid #FFFFFF; 
+        }
+        .social {
+            display: flex;
+            gap: 1rem;
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+        ul {
+            li {
+                padding-top: 1rem;
+                @include flex-column;
+                width: 100%;
+                gap: 1rem;
+            }
+        }
+    }
+}

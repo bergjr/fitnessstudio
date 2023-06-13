@@ -17,3 +17,15 @@
         padding-bottom: 3.8rem;
     }
 }
+
+@media screen and (min-width: 780px) {
+    #exercises {
+        height: 300px;
+        .container {
+            flex-direction: row;
+            padding: 0 1rem;
+            top: -1rem;
+        }
+    }
+    
+}

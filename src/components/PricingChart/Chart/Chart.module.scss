@@ -1,0 +1,68 @@
+@import "styles/abstract/variables.scss";
+
+.chart {
+  width: 390px;
+  height: 650px;
+  padding: 1rem 2rem;
+  .img {
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: all .4s;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .container {
+    background-color: white;
+    position: relative;
+    height: 60%;
+    @include flex-column;
+    justify-content: space-between;
+    .inner {
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      border: none;
+      background-color: #ffffff;
+      border-radius: 10px;
+      h3 {
+        @include size-font(1.2rem, $secondary-font);
+        color: $primary-color;
+        padding: 1rem;
+        font-weight: bold;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        padding: .5rem;
+        gap: .8rem;
+        span { 
+            &:nth-child(2) {
+                @include size-font(2.6rem, $secondary-font);
+                font-weight: bold;
+            }
+            &:nth-child(3) { 
+                color: $dark-gray; 
+            }
+        }
+      }
+      ul {
+        @include flex-column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        color: $dark-gray;
+        @include size-font(1rem, $main-font)
+      }
+    }
+  }
+}

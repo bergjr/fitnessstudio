@@ -1,0 +1,22 @@
+@import 'styles/abstract/variables.scss';
+
+.partners {
+    margin-top: 4rem;
+    @include flex-column;
+    gap: 2rem;
+    img {
+        &:hover {
+            filter: invert(12%) sepia(64%) saturate(7225%) hue-rotate(9deg) brightness(95%) contrast(112%);
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .partners {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+        width: 70%;
+        justify-content: center;
+    }
+}

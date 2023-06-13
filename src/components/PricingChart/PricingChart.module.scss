@@ -1,0 +1,39 @@
+@import "styles/abstract/variables.scss";
+
+#pricing {
+  @include flex-column;
+  position: relative;
+  padding: 4rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-image: url("../../assets/nodays.png"),
+    url("../../assets/pricing-bg.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: left 1.5rem top 3rem, 0;
+  .title {
+    @include red-box;
+    width: 60%;
+  }
+  h2 {
+    @include size-font(2rem, $secondary-font);
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    @include size-font(1rem, $secondary-font);
+    text-align: center;
+  }
+  .container {
+    @include flex-column;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  #pricing {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

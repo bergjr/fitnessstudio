@@ -1,9 +1,8 @@
 @import 'styles/abstract/variables.scss';
 
 .card {
+    min-height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $basic-card-bg-color;
     padding: 1rem;
     width: 80%;

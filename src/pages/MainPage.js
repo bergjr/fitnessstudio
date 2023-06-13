@@ -5,6 +5,8 @@ import React from 'react';
 import styles from './MainPage.module.scss';
 import Trainers from 'components/Trainers/Trainers';
 import Testimonials from 'components/Testimonials/Testimonials';
+import BMI from 'components/BMI/BMI';
+import PricingChart from 'components/PricingChart/PricingChart';
 
 const MainPage = () => {
     return (
@@ -15,7 +17,9 @@ const MainPage = () => {
             </section>
             <Classes />
             <Trainers />
-            <Testimonials />
+            <Testimonials /> 
+            <BMI />
+            <PricingChart />
         </>
     );
 }

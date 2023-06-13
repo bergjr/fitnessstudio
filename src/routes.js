@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer';
 import NavBar from 'components/NavBar/NavBar';
 import MainPage from 'pages/MainPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -13,6 +14,7 @@ function AppRouter() {
         <Route path="*" element={<h1>Page does not exist.</h1>}/>
       </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }

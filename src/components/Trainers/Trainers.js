@@ -4,7 +4,7 @@ import Trainer from './Trainer/Trainer';
 const Trainers = () => {
     return (
         <section id={styles.trainers}>
-            <div class={styles['text-container']}>
+            <div className={styles['text-container']}>
                 <h3>Gym Trainers</h3>
                 <h2>Team of Experts Coaches</h2>
                 <p>Expert team of coaches helps you succeed in any goal, personalized guidance and motivation provided!</p>

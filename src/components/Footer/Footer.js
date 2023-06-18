@@ -6,23 +6,42 @@ const Footer = () => {
     return (
         <footer id={styles.footer}>
             <div className={styles.container}>
-                <Logo />
-                <p>
-                Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.   
-                </p>
-                <div className={styles.social}>
-                    <FaFacebookF />
-                    <FaTwitter />
-                    <FaInstagram />
+                <div className={styles['inner-container']}>
+                    <Logo />
+                    <p>
+                    Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.   
+                    </p>
+                    <div className={styles.social}>
+                        <FaFacebookF />
+                        <FaTwitter />
+                        <FaInstagram />
+                    </div>
+                    <p>
+                        Privacy Policy | © 2023
+                    </p>
+                    <p>
+                        Fitness Studio
+                    </p>
                 </div>
-                <p>
-                Privacy Policy | © 2023
-                </p>
-                <p>
-                Fitness Studio
-                </p>
+                <div className={`${styles["inner-container"]} ${styles["inner-container--border"]}`}>
+                    <h2>Our Classes</h2>
+                    <ul>
+                        <li>
+                            <p>Fitness</p>
+                        </li>
+                        <li>
+                            <p>Aerobics</p>
+                        </li>
+                        <li>
+                            <p>Swimming</p>
+                        </li>
+                        <li>
+                            <p>Jumping</p>
+                        </li>
+                    </ul>
+                </div>
                 <div className={styles["inner-container"]}>
-                    <h2>Working Hours</h2>
+                    <h2>Opening Hours</h2>
                     <ul>
                         <li>
                             <p className={styles.bold}>Monday - Friday</p>

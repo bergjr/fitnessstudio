@@ -5,21 +5,17 @@ import Classe from './Classe/Classe';
 const Classes = () => {
     return (
         <section id={styles.classes}>
-            <h3 className={styles.title}>Our Featured Class</h3>
-            <h2 className={styles.text}>We are offering the best exercise classes in town</h2>
+            <div className={styles['inner-box']}>
+                <h3 className={styles.title}>Our Featured Class</h3>
+                <h2 className={styles.text}>We are offering the best exercise classes in town</h2>
+            </div>
             <ul>
-                <li>
-                    <Classe img="bicycle.jpg" exercise="Bicycle" time="Wednesdays 10:00am to 13:00pm"/>
-                </li>
-                <li>
-                    <Classe img="boxing.jpg" exercise="Boxing" time="Thursdays 7:00pm to 10:00pm"/>
-                </li>
-                <li>
-                    <Classe img="power.jpg" exercise="Power" time="Friday 11:00am to 13:00pm"/>
-                </li>
-                <li>
-                    <Classe img="weight.jpg" exercise="WeighLifting" time="Monday 11:00am to 13:00pm"/>
-                </li>
+                <Classe img="bicycle.jpg" exercise="Bicycle" time="Wednesdays 10am to 5pm"/>
+                <Classe img="boxing.jpg" exercise="Boxing" time="Thursdays 7pm to 10pm"/>
+                <Classe img="power.jpg" exercise="Power" time="Friday 11am to 2pm"/>
+                <Classe img="weight.jpg" exercise="WeighLifting" time="Monday 11am to 8pm"/>
+                <Classe img="boxing.jpg" exercise="Boxing" time="Thursdays 7pm to 10pm"/>
+                <Classe img="power.jpg" exercise="Power" time="Friday 11am to 2pm"/>
             </ul>
         </section>
     );

@@ -1,7 +1,7 @@
 @import 'styles/abstract/variables.scss';
 
 #header {
-    background-color: $primary-color;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,8 +9,12 @@
     position: fixed;
     padding: 1rem;
     z-index: 5;
+    
     nav {
         ul {
+            .subscribe {  
+                display: none;
+            }    
             display: flex;
             gap: 1rem;
             .icon {
@@ -19,9 +23,67 @@
                 color: $logo-color;
                 transition: all .3s;
                 &:hover {
-                    color: $secondary-color;
+                    color: $primary-color;
                 }
             }
         }
     }
+}
+
+.scrolled {
+    background-color: #000000 !important;    
+}
+
+@media screen and (min-width: 1220px) {
+    #header {
+        nav.main-nav {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            .subscribe {  
+                display: block;
+                border: 1px solid #FFFFFF;
+                padding: .8rem;
+                border-radius: .8rem;
+                a {
+                    display: flex;
+                    align-items: center;
+                    @include size-font(1rem, $secondary-font);
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    gap: 3px;
+                    text-transform: uppercase;
+                    svg {
+                        position: relative;
+                        margin-right: 5px;
+                        color: $primary-color;
+                    }
+                    &:hover {
+                        svg {
+                            animation: rotate 1.3s ease-in-out infinite;
+                        }    
+                    }
+                }
+            }
+            .menu-mobile {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@keyframes rotate 
+{
+    0% { 
+        transform: rotate(0deg);  
+    }
+
+    50% {
+        transform: rotate(180deg);
+        
+    }
+
+    100% { 
+        transform: rotate(180deg); 
+    } 
 }

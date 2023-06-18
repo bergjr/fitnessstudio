@@ -1,7 +1,7 @@
 @import 'styles/abstract/variables.scss';
 
 .partners {
-    margin-top: 4rem;
+    margin: 4rem 0;
     @include flex-column;
     gap: 2rem;
     img {
@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1024px) {
     .partners {
         flex-direction: row;
         flex-wrap: wrap;

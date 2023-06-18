@@ -5,7 +5,7 @@
     align-items: center;
     color: $logo-text-color;
     svg {
-        background-color: linear-gradient(to right $primary-color, $secondary-color);
+        background-color: $primary-color;
         color: #FFFFFF;
         width: 3.5rem;
         height: 3.5rem;

@@ -8,32 +8,56 @@
         align-items: center;
         gap: 2rem;
         padding: 3rem;
-        p {
-            text-align: center;
-            padding: 0 5%;
-            @include size-font(1rem, $secondary-font);
-        }
-        .bold {
-            font-weight: bold;
-        }
-        h2 {
-           @include size-font(2rem, $main-font);
-           border-bottom: 2px solid #FFFFFF; 
-        }
-        .social {
-            display: flex;
+        .inner-container {
+            @include flex-column;
+            align-items: center;
             gap: 1rem;
-            svg {
-                width: 1.5rem;
-                height: 1.5rem;
+            p {
+                text-align: center;
+                padding: 0 5%;
+                @include size-font(1rem, $secondary-font);
+            }
+            .bold {
+                font-weight: bold;
+            }
+            h2 {
+            @include size-font(2rem, $main-font);
+            border-bottom: 2px solid #FFFFFF; 
+            }
+            .social {
+                display: flex;
+                gap: 1rem;
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+            ul {
+                li {
+                    padding-top: 1rem;
+                    @include flex-column;
+                    width: 100%;
+                    gap: .8rem;
+                }
             }
         }
-        ul {
-            li {
-                padding-top: 1rem;
-                @include flex-column;
-                width: 100%;
-                gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #footer {
+        .container {
+            padding: 5rem;
+            flex-direction: row;
+            align-items: normal;
+            .inner-container {
+                width: 30%;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                &--border {
+                    border-left: 2px solid #FFFFFF;
+                    border-right: 2px solid #FFFFFF;
+                }
             }
         }
     }

@@ -1,0 +1,24 @@
+@import 'styles/abstract/variables.scss';
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    gap: 3rem;
+    margin-right: auto;
+    @include size-font(1.3rem, $main-font);
+    li {
+        a {
+            transition: color .3s;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.active {
+    border-bottom: 2px solid #FFFFFF;           
+}

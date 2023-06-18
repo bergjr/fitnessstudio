@@ -4,16 +4,13 @@ const Classe = (props) => {
     const img = require(`assets/${props.img}`)
     
     return (
-        <div className={styles['class']}>
-            <div className={styles.img} style={{backgroundImage: `url(${img})`}}>
-                {/* <img src={img} alt={props.exercise} /> */}
-            </div> 
-            <div className={styles.icon}></div>
-            <div className={styles['class__text']}>
-                <h3>{props.exercise}</h3>
-                <h4>{props.time}</h4>
-            </div>
-        </div>
+        <li className={styles['class']} style={{backgroundImage: `url(${img})`}}>
+                <div className={styles.icon}></div>
+                <div className={styles.text}>
+                    <h3>{props.exercise}</h3>
+                    <h4>{props.time}</h4>
+                </div>    
+        </li>
     );
 }
 

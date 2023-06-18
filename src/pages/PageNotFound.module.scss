@@ -1,0 +1,8 @@
+@import 'styles/abstract/variables.scss';
+
+#notfound {
+    h1 {
+        text-align: center;
+        @include size-font(10rem, $main-font);
+    }
+}

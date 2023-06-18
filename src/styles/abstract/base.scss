@@ -1,3 +1,18 @@
+@import './variables.scss';
+
 body, html {
     min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+	width: .5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $primary-color;
+	border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: $bright-gray;
 }

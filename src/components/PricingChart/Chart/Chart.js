@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Chart.module.scss'
 import Button from 'components/UI/Button/Button';
+import LinkShadow from 'components/UI/LinkShadow/LinkShadow';
 const Chart = (props) => {
     const img = require(`assets/${props.img}`)
     return (
@@ -18,7 +19,7 @@ const Chart = (props) => {
                         <li>Personal Trainer</li>
                         <li>Cycling</li>
                     </ul>
-                    <Button type="subscribe">Subscribe</Button>
+                    <LinkShadow to="/subscribe" color="black">Subscribe</LinkShadow>
                 </div>
             </div>
         </div>

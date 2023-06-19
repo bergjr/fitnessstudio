@@ -1,4 +1,3 @@
-import CardBasic from "components/UI/CardBasic/CardBasic";
 import React from "react";
 import styles from "./ExerciseList.module.scss";
 import { BsClockHistory } from "react-icons/bs";

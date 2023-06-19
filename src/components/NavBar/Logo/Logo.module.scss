@@ -4,14 +4,14 @@
     gap: .5rem;
     align-items: center;
     color: $logo-text-color;
-    svg {
-        background-color: $primary-color;
+    .img {
+        // background-color: $primary-color;
         color: #FFFFFF;
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 4rem;
+        height: 4rem;
         padding: .3rem;
         border-radius: 2px;
-        box-shadow: 1px 1px 3px #000000;
+        // box-shadow: 1px 1px 3px #000000;
     }
     .text {
         h3 {

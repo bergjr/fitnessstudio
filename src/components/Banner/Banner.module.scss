@@ -11,26 +11,32 @@
     color: #FFFFFF;
     position: relative;
     .container {
-        width: 60%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         margin-top: 10%;
         text-align: center;
-        h3 {
-            @include red-box;
-        }
-        h2 {
-            font-size: 2.8rem;
-            font-family: $secondary-font;
-            text-transform: uppercase;
-        }
-        .bold {
-            font-weight: 800;
-        }
-        .thin {
-            font-weight: 300;
+        position: relative;
+        .text {
+            @include flex-column;
+            align-items: center;
+            h3 {
+                @include red-box;
+                max-width: 300px;
+            }
+            h2 {
+                font-size: 2.8rem;
+                font-family: $secondary-font;
+                text-transform: uppercase;
+            }
+            .bold-red {
+                font-weight: 800;
+                color: $primary-color;
+            }
+            .thin {
+                font-weight: 300;
+            }
         }
         .share {
             display: none;
@@ -46,7 +52,7 @@
             .share {
                 display: inline-block;
                 position: absolute;
-                right: 5%;
+                right: 0;
                 top: 50%;
                 transform: rotate(90deg);
                 @include size-font(2rem, $main-font);

@@ -1,0 +1,60 @@
+@import "styles/abstract/variables.scss";
+
+.link {
+    position: relative;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 1rem;
+    width: 200px;
+    margin-top: 1rem;
+    @include size-font(1.5rem, $main-font);
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    transition: all .5s;
+    &:hover {
+        background-color: $primary-color;
+        color: #FFFFFF;
+        &::before {
+            top: 0;
+            left: 0;
+        }
+        svg {
+            color: #FFFFFF;
+        }
+    }
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        color: $primary-color;
+        transition: all .5s;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -20%;
+        left: 10%;
+        background-color: transparent;
+        transform: translateZ(-10px);
+        border: 2px solid $dark-gray;
+        transition: all .5s;
+        opacity: .8;
+    }
+}
+
+.link--black {
+    background-color: #000000;
+    color: #FFFFFF;
+    svg {
+        color: $primary-color;
+    }
+    &::before {
+        border: 2px solid $primary-color;
+    }    
+}

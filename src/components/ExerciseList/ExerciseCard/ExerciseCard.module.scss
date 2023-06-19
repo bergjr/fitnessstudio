@@ -3,14 +3,16 @@
     min-height: 300px;
     @include flex-column;
     align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
     background-color: $basic-card-bg-color;
-    padding: 1rem;
+    padding: 2rem;
     width: 80%;
     border-radius: 0 20px;
     text-align: center;
     box-shadow: 0 1px 4px #000000;
     &:hover{
-        background: url("../../../assets/fitness.jpg");
+        background: url("../../../assets/minibanner1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         color: #FFFFFF;

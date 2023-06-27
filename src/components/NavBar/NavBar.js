@@ -48,7 +48,7 @@ const NavBar = () => {
                     <li><AiOutlineQuestionCircle className={styles.icon} /></li>   
                     <li>
                         <div className={styles.subscribe}>
-                            <Link to="/subscribe"><BsFillPlusSquareFill size="30"/> Join a class now</Link>
+                            <Link to="/contactus"><BsFillPlusSquareFill size="30"/> Join a class now</Link>
                         </div>
                     </li>
                 </ul>

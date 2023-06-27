@@ -6,7 +6,8 @@ const MenuDesktop = () => {
         <ul className={styles['main-menu']}>
             <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? styles.active : ""}>Home</NavLink></li>
             <li><NavLink>Schedule</NavLink></li>
-            <li><NavLink>Contact us</NavLink></li>
+            <li><NavLink to="/classes" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? styles.active : ""}>Classes</NavLink></li>
+            <li><NavLink to="/contactus" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? styles.active : ""}>Contact Us</NavLink></li>
             <li><NavLink>About us</NavLink></li>
             <li><NavLink>Gallery</NavLink></li>
             <li><NavLink  to="/pricing" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? styles.active : ""}>Pricing</NavLink></li>

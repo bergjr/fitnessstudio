@@ -1,0 +1,28 @@
+@import "styles/abstract/variables.scss";
+
+.infobox {
+    margin-bottom: 1rem;
+    h3 {
+       border-bottom: 4px solid $primary-color;
+       @include size-font(1.8em, $main-font); 
+       margin: 2rem 0;
+    }
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        @include size-font(1em, $secondary-font); 
+        color: $dark-gray;
+        width: 100%;  
+    }
+    a {
+        svg {
+            color: black;
+            width: 4rem;
+            height: 4rem;
+            padding: 10px;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

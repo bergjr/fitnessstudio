@@ -19,9 +19,9 @@ const Banner = () => {
                     <span>Share</span>
                     <span className={styles.bar}></span>
                     <div className={styles.social}>
-                        <a href="#"><FaFacebookF /></a>
-                        <a href="#"><FaTwitter /></a>
-                        <a href="#"><FaInstagram /></a>
+                        <a href="asdasd"><FaFacebookF /></a>
+                        <a href="asd"><FaTwitter /></a>
+                        <a href="aasddd"><FaInstagram /></a>
                     </div>
                 </div>
             </div>  

@@ -1,0 +1,30 @@
+@import "styles/abstract/variables.scss";
+
+#contact {
+    width: 100%;
+    .container {
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        .general-infos {
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+            h1 {
+                @include size-font(2.5em, $main-font);
+            }
+            p.text {
+                @include size-font(1em, $secondary-font);
+            }
+            .infos {
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

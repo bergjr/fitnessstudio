@@ -1,0 +1,28 @@
+@import 'styles/abstract/variables.scss';
+
+.container{
+    min-width: 370px;
+    border-radius: 10px;
+    background-color: $bright-gray;
+    form {
+        padding: 2.5rem 1rem;
+        @include flex-column;
+        label {
+            margin: 1rem 0;
+            @include size-font(1.5em, $main-font);
+        }
+        input, select, textarea {
+            background-color: white;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: $secondary-font;
+        }
+        input::placeholder {
+            color: $dark-gray;
+        }
+        textarea {
+            height: 250px;
+        }
+    }
+}

@@ -45,6 +45,19 @@
                 @include size-font(1em, $secondary-font);
                 color: white;
             }
+            .social {
+                display: flex;
+                gap: 1.5rem;
+                svg {
+                    color: #FFFFFF;
+                    width: 45px;
+                    height: 45px;
+                    transition: color .3s;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
             .gallery {
                 display: flex;
                 flex-wrap: wrap;

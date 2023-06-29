@@ -8,6 +8,7 @@ import photo4 from 'assets/mini/photo4.jpg';
 import photo5 from 'assets/mini/photo5.jpg';
 import photo6 from 'assets/mini/photo6.jpg';
 import { AiOutlineClose } from 'react-icons/ai';
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const AboutHeader = ({isAboutOpen, closeAbout}) => {
     return (
@@ -40,6 +41,12 @@ const AboutHeader = ({isAboutOpen, closeAbout}) => {
                 </div>
                 <div className={styles['text-container']}>
                     <h2>Follow Us</h2>
+                    <div className={styles.social}>
+                        <a href="http://facebook.com"><BsFacebook /></a>
+                        <a href="http://instagram.com"><BsInstagram /></a>
+                        <a href="http://twitter.com"><BsTwitter /></a>
+                        <a href="http://linkedin.com"><BsLinkedin /></a>
+                    </div>
                 </div>    
             </div>
         </section>

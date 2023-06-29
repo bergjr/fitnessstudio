@@ -1,7 +1,10 @@
 import MiniBanner from 'components/Banner/MiniBanner/MiniBanner';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from "./PageNotFound.module.scss";
 const PageNotFound = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
         <MiniBanner />

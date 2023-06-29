@@ -1,0 +1,167 @@
+[
+  {
+    "day": "Monday",
+    "data": [
+      {
+        "trainer": "Robson",
+        "class": "Yoga",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Diana",
+        "class": "Aerobics",
+        "time": "1pm - 3pm"
+      },
+      {
+        "trainer": "Leandra",
+        "class": "Swimming",
+        "time": "8am - 2pm"
+      },
+      {
+        "trainer": "Conor",
+        "class": "Boxing",
+        "time": "5pm - 6pm"
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "data": [
+      {
+        "trainer": "Eighon",
+        "class": "Powerlifting",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Carlos",
+        "class": "Swimming",
+        "time": "5pm - 10pm"
+      },
+      {
+        "trainer": "Nelma",
+        "class": "Aerobics",
+        "time": "8am - 2pm"
+      },
+      {
+        "trainer": "Conor",
+        "class": "Boxing",
+        "time": "5pm - 6pm"
+      },
+      {
+        "trainer": "Carla",
+        "class": "Boxing",
+        "time": "5pm - 6pm"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "data": [
+      {
+        "trainer": "Claudia",
+        "class": "Boxing",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Diana",
+        "class": "Aerobics",
+        "time": "1pm - 3pm"
+      },
+      {
+        "trainer": "Leandra",
+        "class": "Swimming",
+        "time": "8am - 2pm"
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "data": [
+      {
+        "trainer": "Conor",
+        "class": "Yoga",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Juliana",
+        "class": "Dancing",
+        "time": "1pm - 3pm"
+      },
+      {
+        "trainer": "Luiza",
+        "class": "Spinning",
+        "time": "8am - 2pm"
+      },
+      {
+        "trainer": "Hugo",
+        "class": "Running",
+        "time": "5pm - 6pm"
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "data": [
+      {
+        "trainer": "Robson",
+        "class": "Yoga",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Ronaldo",
+        "class": "Spinning",
+        "time": "1pm - 3pm"
+      },
+      {
+        "trainer": "Rafael",
+        "class": "Resistance",
+        "time": "8am - 2pm"
+      },
+      {
+        "trainer": "Conor",
+        "class": "Boxing",
+        "time": "5pm - 6pm"
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "data": [
+      {
+        "trainer": "Robson",
+        "class": "Yoga",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Diana",
+        "class": "Aerobics",
+        "time": "1pm - 3pm"
+      },
+      {
+        "trainer": "Leandra",
+        "class": "Swimming",
+        "time": "8am - 2pm"
+      },
+      {
+        "trainer": "Conor",
+        "class": "Boxing",
+        "time": "5pm - 6pm"
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "data": [
+      {
+        "trainer": "Laffaiet",
+        "class": "Jumping",
+        "time": "10am - 12am"
+      },
+      {
+        "trainer": "Maria",
+        "class": "Aerobics",
+        "time": "1pm - 3pm"
+      }
+    ]
+  }
+]

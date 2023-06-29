@@ -1,28 +1,58 @@
 @import 'styles/abstract/variables.scss';
 
 .container{
-    min-width: 370px;
     border-radius: 10px;
     background-color: $bright-gray;
+    h2 {
+        @include size-font(2rem, $main-font);
+        padding: 1rem 1rem 0;
+        span {
+            color: $primary-color;
+        }
+    }
     form {
-        padding: 2.5rem 1rem;
+        padding: 0 1rem 1rem;
         @include flex-column;
         label {
             margin: 1rem 0;
             @include size-font(1.5em, $main-font);
         }
         input, select, textarea {
-            background-color: white;
+            background-color: #FFFFFF;
             padding: 1rem;
             border: 1px solid black;
             border-radius: 10px;
             font-family: $secondary-font;
+            &::placeholder {
+                color: $dark-gray;
+            }
         }
-        input::placeholder {
-            color: $dark-gray;
+        
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
         }
         textarea {
             height: 250px;
         }
+        button {
+            align-self: center;
+            margin: 2rem 0 1rem;
+        }
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        h2 {
+            padding: 2rem 3rem 0;
+        }
+        form {
+            padding: 0 3rem 2rem; 
+        }
+    }
+    
 }

@@ -1,3 +1,9 @@
 .first-section {
-    background-color: #f8f3f3;
+    background: url("../assets/pricing-bg.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+    .first-section {
+        padding: 0 4rem;
+    }
 }

@@ -1,0 +1,57 @@
+@import "styles/abstract/variables.scss";
+
+.container {
+    @include flex-column;
+    box-shadow: 0 1px 50px #000000;
+    margin: 0 1rem;
+    .text-box {
+        @include flex-column;
+        align-items: center;
+        gap: 1.2rem;
+        width: 528px;
+        height: 351.33px;
+        padding: 0 2rem;
+        justify-content: center;
+        background-color: #000000;
+        color: #FFFFFF;
+        h3 {
+            @include size-font(2em, $secondary-font);
+            font-weight: bold;
+        }
+        p {
+            @include size-font(1em, $secondary-font);
+            font-weight: 300;
+            text-align: center;
+        }
+        .icon-container {
+             img {
+                width: 100px;
+                height: auto;
+             }
+        }
+        
+    }
+    .image-box {
+        width: 528px;
+        height: 351.33px;
+        overflow: hidden;
+    }
+}
+
+.container--reverse {
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        .text-box {
+            @include flex-column;
+        }
+    }
+
+    .container--reverse {
+        flex-direction: row-reverse;
+    }
+
+}

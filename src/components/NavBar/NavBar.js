@@ -7,15 +7,20 @@ import { BsFillPersonFill, BsFillPlusSquareFill } from 'react-icons/bs';
 import Menu from './Menu/Menu';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
+import AboutHeader from './AboutHeader/AboutHeader';
 
 
 
 const NavBar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isAboutOpen, setIsAboutOpen] = useState(false);
+
     const closeMenu = () => {
-        console.log('entrou');
         setIsMenuOpen(false)
+    }
+    const closeAbout = () => {
+        setIsAboutOpen(false);
     }
 
     const [scrollState, setScrollState] = useState("top");
@@ -36,6 +41,12 @@ const NavBar = () => {
 
 
     const isDesktop = useMediaQuery({query: '(min-width: 1220px)'});
+    const openMenu = () => {
+        if(isAboutOpen) {
+            setIsAboutOpen(false);
+        }
+        setIsMenuOpen(!isMenuOpen);
+    }
 
     return (
         <header id={styles.header} style={{backgroundColor: `${scrollState !== 'top' ? '#000000' : 'transparent'}`}}>
@@ -43,9 +54,9 @@ const NavBar = () => {
             <nav className={styles['main-nav']}>    
                 {isDesktop && <MenuDesktop />}
                 <ul className={styles['menu-mobile']}>
-                    {!isDesktop && <li><AiOutlineMenu className={styles.icon} onClick={() => {setIsMenuOpen(!isMenuOpen)}}/></li>}
+                    {!isDesktop && <li><AiOutlineMenu className={styles.icon} onClick={openMenu}/></li>}
                     <li><BsFillPersonFill className={styles.icon} /></li>
-                    <li><AiOutlineQuestionCircle className={styles.icon} /></li>   
+                    <li><AiOutlineQuestionCircle className={styles.icon} onClick={() => setIsAboutOpen(!isAboutOpen)}/></li>   
                     <li>
                         <div className={styles.subscribe}>
                             <Link to="/contactus"><BsFillPlusSquareFill size="30"/> Join a class now</Link>
@@ -54,6 +65,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             <Menu isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
+            <AboutHeader closeAbout={closeAbout} isAboutOpen={isAboutOpen} />
         </header>
     );
 }

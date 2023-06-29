@@ -6,7 +6,7 @@ const PricingChart = () => {
         <section id={styles.pricing}>
             <h3 className={styles.title}>Pricing Chart</h3>
             <h2>Exclusive Pricing Plans</h2>
-            <p>Gymat an unknown printer took a galley of type and scrambled
+            <p>Fitness Studio an unknown printer took a galley of type and scrambled
 make a type specimen book.</p>
             <ul className={styles.container}>
                 <li>

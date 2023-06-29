@@ -1,0 +1,15 @@
+@import "styles/abstract/variables.scss";
+
+#history {
+    background: url("../assets/pricing-bg.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4rem 5rem;
+    #summary {
+        .container {
+            @include flex-column;
+            align-items: center;
+        }
+    }
+}

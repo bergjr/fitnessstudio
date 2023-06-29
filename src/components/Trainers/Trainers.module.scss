@@ -22,8 +22,8 @@
             width: auto;
         }
         h2 {
-            @include size-font (2.5rem, $secondary-font);
-            font-weight: bold;
+            @include size-font (3rem, $main-font);
+            // font-weight: bold;
         }
         p {
             @include size-font (1rem, $secondary-font);

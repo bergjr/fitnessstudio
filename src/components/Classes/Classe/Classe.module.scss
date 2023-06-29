@@ -33,7 +33,7 @@
         top: 0;
         right: 1rem;
         width: 15%;
-        background: #FFFFFF;
+        backdrop-filter: contrast(40%);
         padding: .5rem;
         border-radius: 0 0 50% 50%;
         filter: grayscale(100%);
@@ -74,7 +74,7 @@
             padding: 0 0 1rem 1rem;
         }    
     }
-    // A different version of the class box for the classes page.
+    // A different version of the class box for the /classes page.
     .full {
         width: 30%;
         height: 30rem;

@@ -1,0 +1,47 @@
+@import "styles/abstract/variables.scss";
+
+.list {
+    @include flex-column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    li {
+        @include flex-column;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bright-gray;
+        text-align: center;
+        padding: 2rem;
+        .category {
+            @include size-font(.9em, $secondary-font);
+            color: $dark-gray;
+        }
+        .title {
+            @include size-font(1.2em, $secondary-font);
+            color: #000000;
+            font-weight: bold;
+        }
+        a.join {
+            background-color: $dark-gray;
+            color: #FFFFFF;
+            @include size-font(1em, $main-font);
+            padding: 1rem 2rem;
+            border-radius: 20px;
+            transition: all .3s;
+            box-shadow: 0 4px 15px $dark-gray;
+            &:hover {
+                background-color: $primary-color;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .list {
+        li {
+            flex-direction: row;
+        }
+    }
+}

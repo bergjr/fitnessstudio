@@ -18,12 +18,14 @@ const BMI = () => {
 
     return (
         <section id={styles.bmi}>
-            <div className={styles['bmi__container']}>
+            <div className={styles['container']}>
                 <h2>Let's calculate your <span>BMI</span></h2>
                 <p>Easily determine your body mass index with our accurate calculation tool</p>
                 <form onSubmit={calculateBMI}>
-                    <input required type='number' name="weight" value={weight} onChange={e => setWeight(e.target.value)} placeholder="Weight / Kg"/>
-                    <input required type='number' name="height" value={height} onChange={e => setHeight(e.target.value)}  placeholder="Height / Cm"/>
+                    <div>
+                        <input required type='number' name="weight" value={weight} onChange={e => setWeight(e.target.value)} placeholder="Weight / Kg"/>
+                        <input required type='number' name="height" value={height} onChange={e => setHeight(e.target.value)}  placeholder="Height / Cm"/>
+                    </div>
                     <div className={styles.result}>
                         <p>Your BMI is: <span>{Math.floor(bmi)}</span></p>
                         <p>Your status is: <span>{status}</span></p>

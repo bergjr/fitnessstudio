@@ -12,11 +12,11 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const AboutHeader = ({isAboutOpen, closeAbout}) => {
     return (
-        <section id={styles['summary']} style={isAboutOpen ? {left: "0"} : {left: "-370px"}}>
+        <section id={styles['summary']} style={isAboutOpen ? {left: "0"} : {left: "-100%"}}>
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <Logo />
-                    <AiOutlineClose onClick={closeAbout} color="red" size="45px" className={styles.close} />
+                    <AiOutlineClose onClick={closeAbout} color="red" className={styles.close} />
                 </div>
                 <div className={styles['text-container']}>
                     <h2>About Us</h2>

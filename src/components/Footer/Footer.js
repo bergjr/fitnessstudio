@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss'
 import Logo from 'components/NavBar/Logo/Logo';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer id={styles.footer}>
@@ -12,9 +13,9 @@ const Footer = () => {
                     Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.   
                     </p>
                     <div className={styles.social}>
-                        <FaFacebookF />
-                        <FaTwitter />
-                        <FaInstagram />
+                        <a href="http://facebook.com"><FaFacebookF /></a>
+                        <a href="http://twitter.com"><FaTwitter /></a>
+                        <a href="http://instagram.com"><FaInstagram /></a>
                     </div>
                     <p>
                         Privacy Policy | © 2023
@@ -27,16 +28,16 @@ const Footer = () => {
                     <h2>Our Classes</h2>
                     <ul>
                         <li>
-                            <p>Fitness</p>
+                            <Link to="/classes">Fitness</Link>
                         </li>
                         <li>
-                            <p>Aerobics</p>
+                            <Link to="/classes">Aerobics</Link>
                         </li>
                         <li>
-                            <p>Swimming</p>
+                            <Link to="/classes">Swimming</Link>
                         </li>
                         <li>
-                            <p>Jumping</p>
+                            <Link to="/classes">Jumping</Link>
                         </li>
                     </ul>
                 </div>

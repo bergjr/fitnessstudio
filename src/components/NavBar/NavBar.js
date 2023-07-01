@@ -55,7 +55,7 @@ const NavBar = () => {
                 {isDesktop && <MenuDesktop />}
                 <ul className={styles['menu-mobile']}>
                     {!isDesktop && <li><AiOutlineMenu className={styles.icon} onClick={openMenu}/></li>}
-                    <li><BsFillPersonFill className={styles.icon} /></li>
+                    {/* <li><BsFillPersonFill className={styles.icon} /></li> */}
                     <li><AiOutlineQuestionCircle className={styles.icon} onClick={() => setIsAboutOpen(!isAboutOpen)}/></li>   
                     <li>
                         <div className={styles.subscribe}>
@@ -71,3 +71,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+

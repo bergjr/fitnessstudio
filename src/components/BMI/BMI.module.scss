@@ -5,48 +5,49 @@
     background-size: cover;
     background-position: left 70%;
     width: 100%;
-    .bmi__container {
+    .container {
         display: flex;
         flex-wrap: wrap;
         color: #FFFFFF;
-        margin-top: 4rem;
-        padding: 1rem;
-        gap: 1rem;
+        padding: 2.5rem 1rem;
+        gap: 2rem;
         h2 {
-            @include size-font(3rem, $secondary-font);
+            @include size-font(3rem, $main-font);
             font-weight: bold;
             span {
                 color: $primary-color;
             }
         }
         p {
-            @include size-font(1.5rem, $secondary-font);
+            @include size-font(1.3rem, $secondary-font);
             span {
                 color: $primary-color;
                 font-weight: bold;
             }
         }
         form {
-            display: flex;
-            gap: 10px;
+            @include flex-column;
             width: 100%;
             flex-wrap: wrap;
-            justify-content: center;
+            gap: 2rem;
             input {
                 background-color: white;
-                width: 40%;
+                width: 48%;
                 padding: 1rem;
-                margin: 1rem 5px;
+                margin: .2rem;
+                @include size-font(1em, $main-font);
                 color: black; 
                 &::placeholder {
-                    color: #cac0c0;
-                    font-family: $main-font;
+                    color: $dark-gray;
+                    @include size-font(1em, $main-font);
                 }
+            }
+            button {
+                margin: 1.2rem auto;
             }
             .result {
                 display: flex;
-                justify-content: center;
-                gap: 4rem;
+                justify-content: space-between;
                 width: 100%;
             }
         }
@@ -55,8 +56,18 @@
 
 @media screen and (min-width: 1024px) {
     #bmi {
-        .bmi__container {
+        .container {
             width:50%;
+            padding-left: 3rem; 
+            form {
+                .result {
+                    justify-content: stretch;
+                    gap: 30%;
+                }
+                button {
+                    margin: 0;
+                }
+            }
         }
     }
 }

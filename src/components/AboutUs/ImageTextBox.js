@@ -13,8 +13,7 @@ const ImageTextBox = (props) => {
                 <h3>{props.title}</h3>
                 <p>{props.children}</p>
             </div>
-            <div className={styles['image-box']} style={{backgroundImage: `url(${img})`, backgroundSize: "contain"}}>
-                {/* <img src={img} alt="gym" /> */}
+            <div className={styles['image-box']} style={{backgroundImage: `url(${img})`, backgroundSize: "cover"}}>
             </div>
         </div>
     );

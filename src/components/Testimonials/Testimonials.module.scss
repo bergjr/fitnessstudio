@@ -3,28 +3,48 @@
 #testimonials {
     @include flex-column;
     align-items: center;
-    gap: 2rem;
-    width: 100%;
-    margin-top: 4rem;
+    margin-top: 8rem;
+    
+    .testimonials-container {
+        border: 8px solid $bright-gray;
+        padding: 3rem;
+        width: 90%;
+        margin: 5rem;
+        box-shadow: 1px 1px 20px $dark-gray;
+    }
     h2 {
         @include red-box;
-        width: auto;
     }
-    .testimonials-container {
-        border: 10px solid $bright-gray;
-        padding: 2rem;
-        &__inner {
-            background-color: black;
-            color: white;
-            padding: 1rem;
+    .arrows {
+        display: flex;
+        gap: 1rem;
+        color: white;
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        .prev, .next {
+            background-color: $primary-color;
+            padding: .2rem;
+            transition: all .2s;
+            border-radius: 5px;
+            &:hover {
+                background-color: #FFFFFF;
+                color: $primary-color;
+            }
         }
     }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1024px) {
     #testimonials {
-        h2 {
-            margin-bottom: 150px;
+        padding: 0 5rem 5rem;
+        margin-top: 2rem;
+        .testimonials-container {
+            width: 100%;
         }
         .testimonials-container {
             width: 80%;

@@ -27,17 +27,30 @@
             .social {
                 display: flex;
                 gap: 1rem;
-                svg {
-                    width: 1.5rem;
-                    height: 1.5rem;
+                a {
+                    transition: all .2s;
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                    &:hover {
+                        color: $primary-color;
+
+                    }
                 }
             }
             ul {
                 li {
-                    padding-top: 1rem;
                     @include flex-column;
-                    width: 100%;
                     gap: .8rem;
+                    a {
+                        padding-top: 1rem;
+                        @include size-font(1.2em, $secondary-font);
+                        transition: all .2s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
                 }
             }
         }

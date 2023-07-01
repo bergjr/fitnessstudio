@@ -6,27 +6,30 @@
     left: -110%;
     height: 100vh;
     width: 100vw;
-    z-index: 100;
-    background-color: #FFFFFF;
-    transition: all .4s;
+    z-index: 999999;
+    background-color: #000000;
+    transition: all .2s;
     ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex-column;
         align-items: center;
-        padding: 3rem 2rem 5rem;
-        font-family: $main-font;
+        padding: 1rem 1rem;
+        @include size-font(1.5em, $main-font);
         height: 100vh;
+        color: #FFFFFF;
         li:first-child {
              align-self: end;
         }
+        li {
+            margin-bottom: 1rem;
+        }
         .close {
-            width: 2rem;
-            height: 2rem;
+            margin-left: auto;
+            width: 45px;
+            height: 45px;
             color: $primary-color; 
         }
         a.active {
-            border-bottom: 2px solid #000000;
+            border-bottom: 2px solid #FFFFFF;
         }           
     }
 }

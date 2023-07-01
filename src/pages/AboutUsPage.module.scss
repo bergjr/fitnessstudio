@@ -5,11 +5,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 4rem 5rem;
+    padding: 0 2rem 5rem;
     #summary {
         .container {
             @include flex-column;
             align-items: center;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #history {
+        padding: 0 4rem 5rem;
     }
 }
